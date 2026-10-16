@@ -23,6 +23,17 @@ Install a user-supplied Creo View `user_prefs.xml` with a backup of any existing
 .\creo-view\Install-CreoViewPreferences.ps1 -Source '.\user_prefs.xml' -WhatIf
 ```
 
+### `creo-pdf/CreoPDFSaveAsSize.ps1`
+
+Detect the first page size of exported PDF drawings and add an ISO A0-A4 suffix to the filename. Supports portrait and landscape pages, filename-conflict protection, size tolerance, and `-WhatIf` preview. Requires an external `pdfinfo.exe`.
+
+```powershell
+.\creo-pdf\CreoPDFSaveAsSize.ps1 -PdfDir 'C:\Creo PDF' -WhatIf
+.\creo-pdf\CreoPDFSaveAsSize.ps1 -PdfDir 'C:\Creo PDF'
+```
+
+See [creo-pdf/README.md](creo-pdf/README.md) for setup instructions.
+
 ## Bugs
 
 Please report issues at https://github.com/mnheia/ptc-tools/issues
