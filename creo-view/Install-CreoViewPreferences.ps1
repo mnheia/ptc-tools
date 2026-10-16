@@ -1,4 +1,14 @@
-# Copy a Creo View preference file into the current user's profile.
+<#
+.SYNOPSIS
+    Copy a Creo View preference file into the current user's profile.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/ptc-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [Parameter(Mandatory)][string]$Source,

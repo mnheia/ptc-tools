@@ -1,4 +1,14 @@
-# Clean Creo Publisher worker logs and optional caches after the worker is stopped.
+<#
+.SYNOPSIS
+    Clean Creo Publisher worker logs and optional caches after the worker is stopped.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/ptc-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [Parameter(Mandatory)][string]$WorkerDirectory,

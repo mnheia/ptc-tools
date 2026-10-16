@@ -11,9 +11,12 @@
     Supports -WhatIf and -Confirm.
 
 .NOTES
-    Author: Mitja Sovec
+    Author: mnheia
     Originally created: 2025-01-20
     Requires Windows PowerShell 5.1 or newer and an external pdfinfo.exe.
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/ptc-tools
+    License: GPL-3.0 (see LICENSE)
 #>
 
 [CmdletBinding(SupportsShouldProcess = $true)]
